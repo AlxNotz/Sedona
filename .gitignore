@@ -1,2 +1,4 @@
 _design
 node_modules
+build
+.sass-cache

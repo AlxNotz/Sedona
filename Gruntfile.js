@@ -1,23 +1,12 @@
-module.exports = function(grunt) { //makes things station-global
+module.exports = function(grunt) {
 
 	require('load-grunt-tasks')(grunt);
-
-	// grunt.loadNpmTasks('grunt-contrib-sass');
-	// grunt.loadNpmTasks('grunt-autoprefixer');
-	// grunt.loadNpmTasks('grunt-combine-media-queries');
-	// grunt.loadNpmTasks('grunt-contrib-cssmin');
-	// grunt.loadNpmTasks('grunt-csscomb');
-	// grunt.loadNpmTasks('grunt-contrib-watch');
-	// grunt.loadNpmTasks('grunt-contrib-connect');
-	// grunt.loadNpmTasks('grunt-contrib-copy');
-	// grunt.loadNpmTasks('grunt-contrib-clean');
-
 
 	grunt.initConfig({
 		sass: {
 			style: {
 				files: {
-					'build/css/style.css': 'source/sass/style.scss'
+					'build/css/style.css': 'source/sass/main.scss'
 				}
 			}
 		},
@@ -64,12 +53,7 @@ module.exports = function(grunt) { //makes things station-global
 		connect: {
 			server: {
 				options: {
-					livereload: true,
-					// port: 9000,
-					// base: '.',
-					// protocol: 'http',
-					// hostname: 'localhost',
-					// open: true,
+					livereload: true
 				}
 			}
 		},
@@ -122,20 +106,3 @@ module.exports = function(grunt) { //makes things station-global
 	]);
 
 };
-
-/*
-plagins:
-
-1) SASS/LESS => CSS;
-2) Autoprefixer;
-3) grunt-watch - run things on file change;automation
-4) @media concatination (combine-media-queries)
-5) CSS minification (cssmin)
-6) css comb - helps with following styliguide
-7) image optimization (imagemin)
-8) clean & copy
-
-
-package.json
-
-*/
