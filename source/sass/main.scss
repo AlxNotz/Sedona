@@ -1,3 +1,11 @@
 @import "globals/normalize/_import-now";
 @import "globals/fonts";
+@import "globals/variables";
 @import "globals/global";
+@import "blocks/header";
+@import "blocks/promo";
+@import "blocks/product-descr";
+@import "blocks/illustrated-feature";
+@import "blocks/feature-block";
+@import "blocks/hotel-offers";
+@import "blocks/footer";

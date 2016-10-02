@@ -1,0 +1,33 @@
+.promo {
+	position: relative;
+	height: 510px;
+	background-image: url(../img/photo-background@1x.jpg);
+
+	@media #{$mq-retina2x} {
+		background-image: url(../img/photo-background@2x.jpg);
+	}
+
+	&__welcome {
+		background-image: url(../img/text-welcome.svg);
+	}
+
+	&__to-georgeous {
+		background-image: url(../img/text-welcome.svg);
+	}
+
+	&__sedona {
+		background-image: url(../img/text-welcome.svg);
+	}
+
+	&__because {
+		background-image: url(../img/text-welcome.svg);
+	}
+
+	&__decoration {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		fill: white;
+	}
+}
