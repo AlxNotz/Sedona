@@ -5,3 +5,8 @@ html {
 *, *:before, *:after {
 	box-sizing: inherit;
 }
+
+.center-wrap {
+	margin: 0 auto;
+	max-width: 1200px;
+}
