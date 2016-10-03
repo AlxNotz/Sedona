@@ -1,6 +1,7 @@
 .illustrated-feature {
 	display: flex;
 	height: 255px;
+	width: 100.01%;
 
 	&__feature-item {
 		flex: 0 1 33.4%;
@@ -18,7 +19,7 @@
 		background-repeat: no-repeat;
 	}
 
-	.illustrated-feature-1 &__image {
+	.illustrated-feature--1 &__image {
 		background-image: url(../img/photo-city@1x.jpg);
 
 		@media #{$mq-retina2x} {
@@ -26,7 +27,7 @@
 		}
 	}
 
-	.illustrated-feature-2 &__image {
+	.illustrated-feature--2 &__image {
 		order: -1;
 		background-image: url(../img/photo-bridge@1x.jpg);
 
