@@ -1,0 +1,41 @@
+.illustrated-feature {
+	display: flex;
+	height: 255px;
+
+	&__feature-item {
+		flex: 0 1 33.4%;
+		padding-top: 52px;
+		padding-left: 3%;
+		padding-right: 3%;
+		color: white;
+		background: $blue;
+	}
+
+	&__image {
+		flex: 0 1 66.6%;
+		height: inherit;
+		background-position: 0 center;
+		background-repeat: no-repeat;
+	}
+
+	.illustrated-feature-1 &__image {
+		background-image: url(../img/photo-city@1x.jpg);
+
+		@media #{$mq-retina2x} {
+			background-image: url(../img/photo-city@2x.jpg);
+		}
+	}
+
+	.illustrated-feature-2 &__image {
+		order: -1;
+		background-image: url(../img/photo-bridge@1x.jpg);
+
+		@media #{$mq-retina2x} {
+			background-image: url(../img/photo-bridge@2x.jpg);
+		}
+	}
+
+	&__decoration-320 {
+		display: none;
+	}
+}

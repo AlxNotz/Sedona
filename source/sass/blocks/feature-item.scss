@@ -1,0 +1,61 @@
+.feature-item {
+	&__image {
+		margin: 0 auto;
+	}
+
+	&__title {
+		margin: 0 auto;
+		margin-bottom: 10px;
+		width: 200px;
+		font-family: $font-bold;
+		font-size: 21px;
+		line-height: 26px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	&__num {
+		position: relative;
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 30px;
+		width: 50px;
+		height: 10px;
+		font-family: $font-regular;
+		font-size: 14px;
+		line-height: 21px;
+
+		& span {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			margin-left: -16px;
+			width: 32px;
+			text-align: center;
+			background: $blue;
+			z-index: 20;
+		}
+
+		&:after {
+			position: absolute;
+			content: '';
+			display: block;
+			top: 10px;
+			left: 0;
+			right: 0;
+			height: 2px;
+			background: white;
+			z-index: 10;
+		}
+	}
+
+	&__text {
+		margin: 0 auto;
+		width: 280px;
+		font-family: $font-regular;
+		font-size: 14px;
+		line-height: 21px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}
