@@ -1,0 +1,23 @@
+.product-descr {
+	padding-top: 55px;
+	height: 215px;
+	text-align: center;
+	background: white;
+
+	&__about {
+		margin: 0 auto;
+		margin-bottom: 30px;
+		width: 380px;
+		font-family: $font-bold;
+		font-size: 21px;
+		line-height: 26px;
+	}
+
+	&__text {
+		margin: 0;
+		font-family: $font-regular;
+		font-size: 14px;
+		line-height: 26px;
+		text-transform: uppercase;
+	}
+}
