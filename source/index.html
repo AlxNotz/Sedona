@@ -108,51 +108,59 @@
 			<div class="feature-item  feature-block-2__feature-item">
 				<p class="feature-item__title">Мало туристов</p>
 				<p class="feature-item__num"><span>№5</span></p>
-				<p class="feature-item__text">Большинство едет в Гран Каньон и толпится там</p>
+				<p class="feature-item__text">Большинство едет в Гранд Каньон и толпится там</p>
 			</div>
 		</section>
 
 		<section class="hotel-offers">
 			<div class="hotel-offers__wrap">
 				<p class="hotel-offers__title">Заинтересовались?</p>
-				<p class="hotel-offers__text">Укажите предполагаемые предложения гостиниц в Седоне</p>
+				<p class="hotel-offers__text">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 			</div>
-			<article class="hotel-search">
+			<article class="hotel-search  hotel-offers__hotel-search">
 				<div class="hotel-search__header">
 					<h1 class="hotel-search__title">Поиск гостиницы в Седоне</h1>
 				</div>
 				<div class="hotel-search__body">
 					<form class="hotel-search__form">
-						<label class="hotel-search__coming-date">
-							<input type="text">
-						</label>
-						<label class="hotel-search__departure-date">
-							<input type="text">
-						</label>
+						<div class="hotel-search__coming-date">
+							<p>Дата заезда:</p>
+							<input type="text" placeholder="24 апреля 2016">
+						</div>
+						<div class="hotel-search__departure-date">
+							<p>Дата выезда:</p>
+							<input type="text" placeholder="4 июля 2016">
+						</div>
 						<div class="hotel-search__wrap">
-							<label class="hotel-search__adult-count">
-								<button class="hotel-search__decrease"></button>
-								<input type="text">
-								<button class="hotel-search__increase"></button>
-							</label>
-							<label class="hotel-search__children-count">
-								<button class="hotel-search__decrease"></button>
-								<input type="text">
-								<button class="hotel-search__increase"></button>
-							</label>
+							<div class="hotel-search__adult-count">
+								<p>Взрослые:</p>
+								<div class="hotel-search__count-wrap">
+									<button class="hotel-search__decrease"></button>
+									<input type="text" placeholder="2">
+									<button class="hotel-search__increase"></button>
+								</div>
+							</div>
+							<div class="hotel-search__children-count">
+								<p>Дети:</p>
+								<div class="hotel-search__count-wrap">
+									<button class="hotel-search__decrease"></button>
+									<input type="text" placeholder="0">
+									<button class="hotel-search__increase"></button>
+								</div>
+							</div>
 						</div>
 						<button class="hotel-search__submit">Найти</button>
 					</form>
 				</div>
 			</article>
-			<iframe
-			  width="600"
-			  height="450"
-			  frameborder="0" style="border:0"
-			  src="https://www.google.com/maps/embed/v1/view?key=AIzaSyDqjzHobL_9XC70MFcJycnW8-6xCpz-DfU
-			    &center=35.1002243,-112.120954
-			    &zoom=9">
-			</iframe>
+			<div class="goggle-map">
+				<iframe
+				  frameborder="0" style="border:0"
+				  src="https://www.google.com/maps/embed/v1/view?key=AIzaSyDqjzHobL_9XC70MFcJycnW8-6xCpz-DfU
+				    &center=35.2,-112.4
+				    &zoom=8">
+				</iframe>
+			</div>
 		</section>
 
 		<footer class="footer">

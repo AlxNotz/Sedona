@@ -10,6 +10,11 @@ body {
 	box-sizing: inherit;
 }
 
+input::-webkit-input-placeholder {opacity: 1;}
+input::-moz-placeholder          {opacity: 1;}
+input:-moz-placeholder           {opacity: 1;}
+input:-ms-input-placeholder      {opacity: 1;}
+
 .center-wrap {
 	margin: 0 auto;
 	max-width: 1200px;
