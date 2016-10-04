@@ -50,6 +50,16 @@
 		border: none;
 		outline: none;
 		background: #f2f2f2;
+
+		&:hover {
+			background: #ebebeb;
+		}
+
+		&:focus {
+			padding-left: 10px;
+			border: 2px solid #e5e5e5;
+			background: white;
+		}
 	}
 
 	& p {
@@ -71,14 +81,27 @@
 		padding-top: 6px;
 		height: 85px;
 		text-align: center;
+		color: white;
 		background: $brown;
+		cursor: pointer;
+
+		&:hover {
+			background: $brown-hover;
+		}
+
+		&:active {
+			background: $brown-down;
+		}
 	}
 
 	&__title {
 		font-size: 21px;
 		line-height: 26px;
 		text-transform: uppercase;
-		color: white;
+	}
+
+	&__header:active &__title {
+		opacity: .3;
 	}
 
 	&__body {
@@ -108,17 +131,26 @@
 		& input {
 			flex: 0 1 75.5%;
 		}
+	}
 
-		&:after {
-			position: absolute;
-			display: block;
-			top: 7px;
-			right: 9px;
+	&__calendar {
+		position: absolute;
+		top: 7px;
+		right: 9px;
+		color: lighten(#000, 70%);
+
+		&:before {
 			font-family: $icon;
 			content: '\e900';
 			font-size: 22px;
+		}
+
+		&:hover {
 			color: #000;
-			opacity: .3;
+		}
+
+		&:active {
+			color: $blue;
 		}
 	}
 
@@ -155,6 +187,10 @@
 			height: 38px;
 			vertical-align: top;
 			text-align: center;
+
+			&:focus {
+				padding-left: 5px;
+			}
 		}
 	}
 	
@@ -165,6 +201,15 @@
 		height: 38px;
 		vertical-align: top;
 		background: #f2f2f2;
+		color: lighten(#000, 70%);
+
+		&:hover {
+			color: #000;
+		}
+
+		&:active {
+			color: $blue;
+		}
 	}
 
 	&__decrease:before,
@@ -173,8 +218,10 @@
 		font-family: $icon;
 		font-size: 9px;
 		line-height: 38px;
-		content: "\ea0a";
-		opacity: .3;
+	}
+
+	&__decrease:before {
+		content: "\ea0b";
 	}
 
 	&__increase:before {

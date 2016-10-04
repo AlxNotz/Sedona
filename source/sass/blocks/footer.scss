@@ -41,6 +41,16 @@
 		vertical-align: middle;
 	}
 
+	&__designer-logo:hover:before,
+	&__organisation-logo:hover:before {
+		color: $blue;
+	}
+
+	&__designer-logo:active:before,
+	&__organisation-logo:active:before {
+		color: lighten(#000, 70%);
+	}
+
 	&__designer-logo:before {
 		font-size: 30px;
 		content: "\e908";
