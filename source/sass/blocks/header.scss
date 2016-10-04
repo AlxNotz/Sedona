@@ -17,24 +17,70 @@
     height: 55px;
   }
 }
+
 .nav {
   &__list {
+  	position: relative;
     display: flex;
     margin: 0;
     padding-left: 0;
 
     justify-content: space-between;
+
+    @media #{$mq-mobile} {
+    	display: none;
+    	flex-direction: column;
+
+    	&:after {
+    		position: absolute;
+    		display: block;
+    		content: "";
+    		bottom: 0;
+    		left: 0;
+    		right: 0;
+    		height: 1px;
+    		box-shadow: 0 0 6px rgba(0, 0, 0, .7);
+    		z-index: 100;
+    	}
+    }
   }
+
   &__item {
     flex: 0 1 20%;
     list-style: none;
     text-align: center;
 
+    @media #{$mq-mobile} {
+    	position: relative;
+    	flex: 0 1 auto;
+
+    	&:before {
+				position: absolute;
+				content: '';
+				display: block;
+				top: 0;
+				left: 0;
+				right: 0;
+				height: 2px;
+				border-bottom: 1px solid #9ac2db;
+				background: #678fa8;
+    	}
+    } 
+
     &:nth-child(2) {
       margin-right: 10%;
+
+      @media #{$mq-mobile} {
+	    	margin-right: 0;
+	    } 
     }
+
     &:nth-child(3) {
       margin-left: 10%;
+
+      @media #{$mq-mobile} {
+	    	margin-left: 0;
+	    }
     }
 
     a {
@@ -48,15 +94,77 @@
       &:hover {
         color: $blue-hover;
       }
+
       &:active {
-        opacity: .3;
+        color: mix(white, $blue, 70%);
+      }
+
+      @media #{$mq-mobile} {
+      	display: block;
+      	width: 100%;
+      	padding: 15px;
+      	font-size: 18px;
+      	color: white;
+      	background: $blue;
+
+      	&:hover {
+      		color: white;
+      		background: $blue-hover;
+      	}
+
+      	&:active {
+      		color: mix(white, $blue, 30%);
+      		background: $blue-down;
+      	}
       }
     }
   }
-  &__burger {
+
+  &__menu {
     display: none;
+
+    @media #{$mq-mobile} {
+      position: absolute;
+      top: 17px;
+      right: 20px;
+      display: block;
+      cursor: pointer;
+      color: $blue;
+    }
+
+    &:before {
+      content: "\e903";
+      font-size: 22px;
+      font-family: $icon;
+    }
+
+    &:hover {
+    	color: #000;
+    }
+
+    &:active {
+    	color: lighten(#000, 70%);
+    }
+  }
+
+  &__close {
+    display: none;
+
+    @media #{$mq-mobile} {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    &:before {
+      color: white;
+      content: "\e901";
+      font-size: 22px;
+      font-family: $icon;
+    }
   }
 }
+
 .logo {
   &__img {
     position: absolute;

@@ -231,7 +231,7 @@
   }
 
   &__submit {
-    padding-top: 17px;
+    padding-top: 18px;
     padding-bottom: 17px;
     width: 100%;
     background: $blue;
@@ -247,6 +247,7 @@
 
     &:active {
       background: $blue-down;
+      color: mix(white, $blue-down, 30%);
     }
   }
 }

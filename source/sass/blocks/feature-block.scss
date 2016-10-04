@@ -7,6 +7,7 @@
 
   &__feature-item {
     flex: 0 1 33.33%;
+    padding: 0 5.5%;
 
     & .feature-item__title {
       margin-bottom: 20px;
@@ -43,6 +44,7 @@
 
   &__feature-item {
     flex: 0 1 33.33%;
+    padding: 0 5.5%;
 
     & .feature-item__title {
       width: 150px;
@@ -56,10 +58,6 @@
       &:after {
         background: lighten($black, 30%);
       }
-    }
-
-    & .feature-item__text {
-      width: 270px;
     }
   }
 }
