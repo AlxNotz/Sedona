@@ -1,264 +1,266 @@
 .hotel-offers {
-	position: relative;
+  position: relative;
 
-	&__wrap {
-		padding-top: 32px;
-		height: 290px;
-		text-align: center;
-		background: white;
-	}
+  &__wrap {
+    padding-top: 32px;
+    height: 290px;
+    background: white;
+    text-align: center;
+  }
 
-	&__title {
-		margin-bottom: 30px;
-		font-family: $font-bold;
-		font-size: 30px;
-		line-height: 26px;
-		text-transform: uppercase;
-		color: #000;
-	}
+  &__title {
+    margin-bottom: 30px;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: $font-bold;
+    line-height: 26px;
+  }
 
-	&__text {
-		margin: 0 auto;
-		width: 440px;
-		font-family: $font-regular;
-		font-size: 14px;
-		line-height: 24px;
-		text-transform: uppercase;
-		color: $black;
-	}
+  &__text {
+    margin: 0 auto;
+    width: 440px;
+    color: $black;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: $font-regular;
+    line-height: 24px;
+  }
 
-	&__hotel-search {
-		position: absolute;
-		top: 205px;
-		left: 50%;
-		margin-left: -285px;
-		z-index: 100;
-	}
+  &__hotel-search {
+    position: absolute;
+    top: 205px;
+    left: 50%;
+    z-index: 100;
+    margin-left: -285px;
+  }
 }
 
 .hotel-search {
-	width: 570px;
-	font-family: $font-bold;
+  width: 570px;
+  font-family: $font-bold;
 
-	& input {
-		padding-left: 12px;
-		padding-right: 36px;
-		font-size: 14px;
-		line-height: 26px;
-		text-transform: uppercase;
-		color: #000;
-		border: none;
-		outline: none;
-		background: #f2f2f2;
+  & input {
+    padding-right: 36px;
+    padding-left: 12px;
+    outline: none;
+    border: none;
+    background: #f2f2f2;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 26px;
 
-		&:hover {
-			background: #ebebeb;
-		}
+    &:hover {
+      background: #ebebeb;
+    }
 
-		&:focus {
-			padding-left: 10px;
-			border: 2px solid #e5e5e5;
-			background: white;
-		}
-	}
+    &:focus {
+      padding-left: 10px;
+      border: 2px solid #e5e5e5;
+      background: white;
+    }
+  }
 
-	& p {
-		margin: 0;
-		margin-top: 4px;
-		font-size: 14px;
-		line-height: 26px;
-		text-transform: uppercase;
-		color: #000;
-	}
+  & p {
+    margin: 0;
+    margin-top: 4px;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 26px;
+  }
 
-	& button {
-		border: none;
-		outline: none;
-		cursor: pointer;
-	}
+  & button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
 
-	&__header {
-		padding-top: 6px;
-		height: 85px;
-		text-align: center;
-		color: white;
-		background: $brown;
-		cursor: pointer;
+  &__header {
+    padding-top: 6px;
+    height: 85px;
+    background: $brown;
+    color: white;
+    text-align: center;
+    cursor: pointer;
 
-		&:hover {
-			background: $brown-hover;
-		}
+    &:hover {
+      background: $brown-hover;
+    }
 
-		&:active {
-			background: $brown-down;
-		}
-	}
+    &:active {
+      background: $brown-down;
+    }
+  }
 
-	&__title {
-		font-size: 21px;
-		line-height: 26px;
-		text-transform: uppercase;
-	}
+  &__title {
+    text-transform: uppercase;
+    font-size: 21px;
+    line-height: 26px;
+  }
 
-	&__header:active &__title {
-		opacity: .3;
-	}
+  &__header:active &__title {
+    opacity: .3;
+  }
 
-	&__body {
-		padding: 55px;
-		height: 395px;
-		background: white;
-		box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.1),
-								5px 5px 20px rgba(0, 0, 0, 0.1);
-	}
+  &__body {
+    padding: 55px;
+    height: 395px;
+    background: white;
+    box-shadow: -5px 5px 20px rgba(0, 0, 0, .1),
+    5px 5px 20px rgba(0, 0, 0, .1);
+  }
 
-	&__form {
+  &__form {
+  }
 
-	}
+  &__coming-date,
+  &__departure-date {
+    position: relative;
+    display: flex;
+    margin-bottom: 30px;
+    height: 38px;
 
-	&__coming-date,
-	&__departure-date {
-		position: relative;
-		display: flex;
-		justify-content: space-between;
-		margin-bottom: 30px;
-		height: 38px;
+    justify-content: space-between;
 
-		& p {
-			flex: 0 1 24.5%;
-		}
+    & p {
+      flex: 0 1 24.5%;
+    }
 
-		& input {
-			flex: 0 1 75.5%;
-		}
-	}
+    & input {
+      flex: 0 1 75.5%;
+    }
+  }
 
-	&__calendar {
-		position: absolute;
-		top: 7px;
-		right: 9px;
-		color: lighten(#000, 70%);
+  &__calendar {
+    position: absolute;
+    top: 7px;
+    right: 9px;
+    color: lighten(#000, 70%);
 
-		&:before {
-			font-family: $icon;
-			content: '\e900';
-			font-size: 22px;
-		}
+    &:before {
+      content: "\e900";
+      font-size: 22px;
+      font-family: $icon;
+    }
 
-		&:hover {
-			color: #000;
-		}
+    &:hover {
+      color: #000;
+    }
 
-		&:active {
-			color: $blue;
-		}
-	}
+    &:active {
+      color: $blue;
+    }
+  }
 
-	&__wrap {
-		display: flex;
-		justify-content: space-between;
-		margin-bottom: 55px;
-	}
+  &__wrap {
+    display: flex;
+    margin-bottom: 55px;
 
-	&__adult-count,
-	&__children-count {
-		flex: 0 1 49%;
-		display: flex;
-		justify-content: space-between;
+    justify-content: space-between;
+  }
 
-		& p {
-			flex: 0 1 30%;
-		}
-	}
+  &__adult-count,
+  &__children-count {
+    display: flex;
+    flex: 0 1 49%;
 
-	&__children-count {
-		flex: 0 1 39%;
-	}
+    justify-content: space-between;
 
-	&__count-wrap {
-		flex: 0 1 auto;
-		font-size: 0;
+    & p {
+      flex: 0 1 30%;
+    }
+  }
 
-		& input {
-			display: inline-block;
-			padding-left: 5px;
-			padding-right: 5px;
-			width: 38px;
-			height: 38px;
-			vertical-align: top;
-			text-align: center;
+  &__children-count {
+    flex: 0 1 39%;
+  }
 
-			&:focus {
-				padding-left: 5px;
-			}
-		}
-	}
-	
-	&__decrease,
-	&__increase {
-		margin: 0;
-		width: 38px;
-		height: 38px;
-		vertical-align: top;
-		background: #f2f2f2;
-		color: lighten(#000, 70%);
+  &__count-wrap {
+    flex: 0 1 auto;
+    font-size: 0;
 
-		&:hover {
-			color: #000;
-		}
+    & input {
+      display: inline-block;
+      padding-right: 5px;
+      padding-left: 5px;
+      width: 38px;
+      height: 38px;
+      vertical-align: top;
+      text-align: center;
 
-		&:active {
-			color: $blue;
-		}
-	}
+      &:focus {
+        padding-left: 5px;
+      }
+    }
+  }
 
-	&__decrease:before,
-	&__increase:before {
-		display: inline-block;
-		font-family: $icon;
-		font-size: 9px;
-		line-height: 38px;
-	}
+  &__decrease,
+  &__increase {
+    margin: 0;
+    width: 38px;
+    height: 38px;
+    background: #f2f2f2;
+    color: lighten(#000, 70%);
+    vertical-align: top;
 
-	&__decrease:before {
-		content: "\ea0b";
-	}
+    &:hover {
+      color: #000;
+    }
 
-	&__increase:before {
-		content: "\ea0a";
-	}
+    &:active {
+      color: $blue;
+    }
+  }
 
-	&__submit {
-		padding-top: 17px;
-		padding-bottom: 17px;
-		width: 100%;
-		font-size: 21px;
-		line-height: 26px;
-		text-align: center;
-		text-transform: uppercase;
-		color: white;
-		background: $blue;
+  &__decrease:before,
+  &__increase:before {
+    display: inline-block;
+    font-size: 9px;
+    font-family: $icon;
+    line-height: 38px;
+  }
 
-		&:hover {
-			background: $blue-hover;
-		}
+  &__decrease:before {
+    content: "\ea0b";
+  }
 
-		&:active {
-			background: $blue-down;
-		}
-	}
+  &__increase:before {
+    content: "\ea0a";
+  }
+
+  &__submit {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    width: 100%;
+    background: $blue;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 21px;
+    line-height: 26px;
+
+    &:hover {
+      background: $blue-hover;
+    }
+
+    &:active {
+      background: $blue-down;
+    }
+  }
 }
 
 .goggle-map {
-	position: relative;
-	height: 470px;
+  position: relative;
+  height: 470px;
 
-	& iframe {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: 1;
-	}
+  & iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+  }
 }

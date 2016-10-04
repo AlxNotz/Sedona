@@ -1,65 +1,65 @@
 .feature-block-1 {
-	display: flex;
-	padding-top: 60px;
-	height: 330px;
-	color: $black;
-	background: white;
+  display: flex;
+  padding-top: 60px;
+  height: 330px;
+  background: white;
+  color: $black;
 
-	&__feature-item {
-		flex: 0 1 33.33%;
+  &__feature-item {
+    flex: 0 1 33.33%;
 
-		& .feature-item__title {
-			margin-bottom: 20px;
-			color: #000;
-		}
-		
-		& .feature-item__image {
-			height: 75px;
-			background-repeat: no-repeat;
-		}
+    & .feature-item__title {
+      margin-bottom: 20px;
+      color: #000;
+    }
 
-		&:nth-child(1) .feature-item__image {
-			width: 75px;
-			background-image: url(../img/icon-house.svg);
-		}
+    & .feature-item__image {
+      height: 75px;
+      background-repeat: no-repeat;
+    }
 
-		&:nth-child(2) .feature-item__image {
-			width: 74px;
-			background-image: url(../img/icon-burger-not-a-menu.svg);
-		}
+    &:nth-child(1) .feature-item__image {
+      width: 75px;
+      background-image: url(../img/icon-house.svg);
+    }
 
-		&:nth-child(3) .feature-item__image {
-			width: 63px;
-			background-image: url(../img/icon-gift.svg);
-		}
-	}
+    &:nth-child(2) .feature-item__image {
+      width: 74px;
+      background-image: url(../img/icon-burger-not-a-menu.svg);
+    }
+
+    &:nth-child(3) .feature-item__image {
+      width: 63px;
+      background-image: url(../img/icon-gift.svg);
+    }
+  }
 }
 
 .feature-block-2 {
-	display: flex;
-	padding-top: 45px;
-	height: 255px;
-	background: #eee;
+  display: flex;
+  padding-top: 45px;
+  height: 255px;
+  background: #eee;
 
-	&__feature-item {
-		flex: 0 1 33.33%;
-		
-		& .feature-item__title {
-			width: 150px;
-		}
+  &__feature-item {
+    flex: 0 1 33.33%;
 
-		& .feature-item__num {
-			& span {
-				background: #eee;
-			}
+    & .feature-item__title {
+      width: 150px;
+    }
 
-			&:after {
-				background: lighten($black, 30%);
-			}
-		}
+    & .feature-item__num {
+      & span {
+        background: #eee;
+      }
 
-		& .feature-item__text {
-			width: 270px;
-		}
-	}
+      &:after {
+        background: lighten($black, 30%);
+      }
+    }
+
+    & .feature-item__text {
+      width: 270px;
+    }
+  }
 }

@@ -14,3 +14,5 @@ $black: #333;
 
 // @media
 $mq-retina2x: "(min-device-pixel-ratio: 2)";
+$mq-tablet:	"(min-width: 321px) and (max-width: 767px)";
+$mq-mobile: "(max-width: 320px)";

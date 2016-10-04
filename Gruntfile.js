@@ -38,7 +38,7 @@ module.exports = function(grunt) {
 		csscomb: {
 			style: {
 				expand: true,
-				src: 'source/sass/**/*.scss'
+				src: ['source/sass/**/*.scss', 'build/css/style.css']
 			}
 		},
 		watch: {

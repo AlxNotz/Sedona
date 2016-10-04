@@ -1,113 +1,114 @@
 .footer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding-left: 2%;
-	margin: 0 auto;
-	height: 120px;
-	background: white;
+  display: flex;
+  margin: 0 auto;
+  padding-left: 2%;
+  height: 120px;
+  background: white;
 
-	&__hashtag {
-		flex: 0 1 33.5%;
-		padding: 15px 15px;
-		font-family: $font-bold;
-		font-size: 21px;
-		line-height: 26px;
-		text-transform: uppercase;
-		color: #000;
-	}
+  justify-content: center;
+  align-items: center;
 
-	&__social-buttons {
-		flex: 0 1 33%;
-		padding: 15px 15px;
-	}
+  &__hashtag {
+    flex: 0 1 33.5%;
+    padding: 15px 15px;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 21px;
+    font-family: $font-bold;
+    line-height: 26px;
+  }
 
-	&__authors {
-		flex: 0 1 auto;
-		padding: 15px 10px;
-		font-family: $font-regular;
-		font-size: 14px;
-		line-height: 26px;
-		text-transform: uppercase;
-		color: #000;
-	}
-	
-	&__designer-logo:before,
-	&__organisation-logo:before {
-		padding: 0 8px;
-		display: inline-block;
-		font-family: $icon;
-		color: #000;
-		vertical-align: middle;
-	}
+  &__social-buttons {
+    flex: 0 1 33%;
+    padding: 15px 15px;
+  }
 
-	&__designer-logo:hover:before,
-	&__organisation-logo:hover:before {
-		color: $blue;
-	}
+  &__authors {
+    flex: 0 1 auto;
+    padding: 15px 10px;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: $font-regular;
+    line-height: 26px;
+  }
 
-	&__designer-logo:active:before,
-	&__organisation-logo:active:before {
-		color: lighten(#000, 70%);
-	}
+  &__designer-logo:before,
+  &__organisation-logo:before {
+    display: inline-block;
+    padding: 0 8px;
+    color: #000;
+    vertical-align: middle;
+    font-family: $icon;
+  }
 
-	&__designer-logo:before {
-		font-size: 30px;
-		content: "\e908";
-	}
+  &__designer-logo:hover:before,
+  &__organisation-logo:hover:before {
+    color: $blue;
+  }
 
-	&__organisation-logo:before {
-		font-size: 33px;
-		content: "\e909";
-	}
+  &__designer-logo:active:before,
+  &__organisation-logo:active:before {
+    color: lighten(#000, 70%);
+  }
+
+  &__designer-logo:before {
+    content: "\e908";
+    font-size: 30px;
+  }
+
+  &__organisation-logo:before {
+    content: "\e909";
+    font-size: 33px;
+  }
 }
 
 .social-buttons {
-	font-size: 0;
+  font-size: 0;
 
-	&__button {
-		display: inline-block;
-		padding: 10px 10px;
-		padding-top: 15px;
-		margin-right: 6px;
-		width: 48px;
-		height: 48px;
-		line-height: 20px;
-		color: white;
-		text-decoration: none;
-		text-align: center;
-		vertical-align: top;
-		background: $blue;
+  &__button {
+    display: inline-block;
+    margin-right: 6px;
+    padding: 10px 10px;
+    padding-top: 15px;
+    width: 48px;
+    height: 48px;
+    background: $blue;
+    color: white;
+    vertical-align: top;
+    text-align: center;
+    text-decoration: none;
+    line-height: 20px;
 
-		&:hover {
-			background: $blue-hover;
-		}
+    &:hover {
+      background: $blue-hover;
+    }
 
-		&:active {
-			background: $blue-down;
-		}
-	}
+    &:active {
+      background: $blue-down;
+    }
+  }
 
-	&__button:last-child {
-		margin-right: 0;
-	}
+  &__button:last-child {
+    margin-right: 0;
+  }
 
-	&__button:before {
-		font-family: $icon;
-	}
+  &__button:before {
+    font-family: $icon;
+  }
 
-	&__button--twitter:before {
-		font-size: 14px;
-		content: "\e906";
-	}
+  &__button--twitter:before {
+    content: "\e906";
+    font-size: 14px;
+  }
 
-	&__button--facebook:before {
-		font-size: 17px;
-		content: "\e902";
-	}
+  &__button--facebook:before {
+    content: "\e902";
+    font-size: 17px;
+  }
 
-	&__button--youtube:before {
-		font-size: 14px;
-		content: "\e907";
-	}
+  &__button--youtube:before {
+    content: "\e907";
+    font-size: 14px;
+  }
 }
