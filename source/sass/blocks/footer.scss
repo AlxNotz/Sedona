@@ -1,0 +1,103 @@
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 2%;
+	margin: 0 auto;
+	height: 120px;
+	background: white;
+
+	&__hashtag {
+		flex: 0 1 33.5%;
+		padding: 15px 15px;
+		font-family: $font-bold;
+		font-size: 21px;
+		line-height: 26px;
+		text-transform: uppercase;
+		color: #000;
+	}
+
+	&__social-buttons {
+		flex: 0 1 33%;
+		padding: 15px 15px;
+	}
+
+	&__authors {
+		flex: 0 1 auto;
+		padding: 15px 10px;
+		font-family: $font-regular;
+		font-size: 14px;
+		line-height: 26px;
+		text-transform: uppercase;
+		color: #000;
+	}
+	
+	&__designer-logo:before,
+	&__organisation-logo:before {
+		padding: 0 8px;
+		display: inline-block;
+		font-family: $icon;
+		color: #000;
+		vertical-align: middle;
+	}
+
+	&__designer-logo:before {
+		font-size: 30px;
+		content: "\e908";
+	}
+
+	&__organisation-logo:before {
+		font-size: 33px;
+		content: "\e909";
+	}
+}
+
+.social-buttons {
+	font-size: 0;
+
+	&__button {
+		display: inline-block;
+		padding: 10px 10px;
+		padding-top: 15px;
+		margin-right: 6px;
+		width: 48px;
+		height: 48px;
+		line-height: 20px;
+		color: white;
+		text-decoration: none;
+		text-align: center;
+		vertical-align: top;
+		background: $blue;
+
+		&:hover {
+			background: $blue-hover;
+		}
+
+		&:active {
+			background: $blue-down;
+		}
+	}
+
+	&__button:last-child {
+		margin-right: 0;
+	}
+
+	&__button:before {
+		font-family: $icon;
+	}
+
+	&__button--twitter:before {
+		font-size: 14px;
+		content: "\e906";
+	}
+
+	&__button--facebook:before {
+		font-size: 17px;
+		content: "\e902";
+	}
+
+	&__button--youtube:before {
+		font-size: 14px;
+		content: "\e907";
+	}
+}

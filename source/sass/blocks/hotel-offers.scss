@@ -191,6 +191,14 @@
 		text-transform: uppercase;
 		color: white;
 		background: $blue;
+
+		&:hover {
+			background: $blue-hover;
+		}
+
+		&:active {
+			background: $blue-down;
+		}
 	}
 }
 
