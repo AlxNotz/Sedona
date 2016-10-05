@@ -156,6 +156,10 @@
 	  		z-index: 100;
 	  	}
     }
+
+    &--js-closed {
+    	display: none;
+    }
   }
 
   &__coming-date,

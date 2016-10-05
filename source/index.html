@@ -125,7 +125,7 @@
 				<div class="hotel-search__header">
 					<h1 class="hotel-search__title">Поиск гостиницы в Седоне</h1>
 				</div>
-				<div class="hotel-search__body">
+				<div class="hotel-search__body  hotel-search__body--js-closed">
 					<form class="hotel-search__form">
 						<div class="hotel-search__coming-date">
 							<p>Дата заезда:</p>
@@ -141,17 +141,17 @@
 							<div class="hotel-search__adult-count">
 								<p>Взрослые:</p>
 								<div class="hotel-search__count-wrap">
-									<button class="hotel-search__decrease" onclick="return false"></button>
-									<input type="text" placeholder="2">
-									<button class="hotel-search__increase" onclick="return false"></button>
+									<button class="hotel-search__decrease"></button>
+									<input id="adult-count" type="text" value="2" placeholder="2">
+									<button class="hotel-search__increase"></button>
 								</div>
 							</div>
 							<div class="hotel-search__children-count">
 								<p>Дети:</p>
 								<div class="hotel-search__count-wrap">
-									<button class="hotel-search__decrease" onclick="return false"></button>
-									<input type="text" placeholder="0">
-									<button class="hotel-search__increase" onclick="return false"></button>
+									<button class="hotel-search__decrease"></button>
+									<input id="children-count" value="0" type="text" placeholder="0">
+									<button class="hotel-search__increase"></button>
 								</div>
 							</div>
 						</div>
