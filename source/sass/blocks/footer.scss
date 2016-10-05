@@ -8,6 +8,11 @@
   justify-content: center;
   align-items: center;
 
+  @media #{$mq-mobile} {
+  	flex-direction: column;
+  	height: 230px;
+  }
+
   &__hashtag {
     flex: 0 1 33.5%;
     padding: 15px 15px;
@@ -16,11 +21,19 @@
     font-size: 21px;
     font-family: $font-bold;
     line-height: 26px;
+
+    @media #{$mq-mobile} {
+	  	flex: 0 1 26%;
+	  }
   }
 
   &__social-buttons {
     flex: 0 1 33%;
     padding: 15px 15px;
+
+    @media #{$mq-mobile} {
+	  	flex: 0 1 38%;
+	  }
   }
 
   &__authors {

@@ -5,33 +5,85 @@
   background: white;
   color: $black;
 
+  @media #{$mq-mobile} {
+  	flex-direction: column;
+  	padding-top: 40px;
+  	height: 420px;
+  }
+
   &__feature-item {
     flex: 0 1 33.33%;
     padding: 0 5.5%;
 
-    & .feature-item__title {
-      margin-bottom: 20px;
-      color: #000;
-    }
+    @media #{$mq-mobile} {
+    	position: relative;
+    	padding-left: 22%;
+    	padding-right: 12.5%;
+	  }
 
-    & .feature-item__image {
+	  &:nth-child(2) {
+	  	@media #{$mq-mobile} {
+	    	order: 3;
+		  }
+	  }
+
+	  & .feature-item__image {
       height: 75px;
       background-repeat: no-repeat;
+
+      @media #{$mq-mobile} {
+      	position: absolute;
+      	top: -9px;
+      	height: 37px;
+      	background-size: contain;
+		  }
     }
 
     &:nth-child(1) .feature-item__image {
       width: 75px;
       background-image: url(../img/icon-house.svg);
+
+      @media #{$mq-mobile} {
+      	top: -9px;
+      	left: 8.5%;
+		  }
     }
 
     &:nth-child(2) .feature-item__image {
       width: 74px;
       background-image: url(../img/icon-burger-not-a-menu.svg);
+
+      @media #{$mq-mobile} {
+      	top: -7px;
+      	left: 8%;
+		  }
     }
 
     &:nth-child(3) .feature-item__image {
       width: 63px;
       background-image: url(../img/icon-gift.svg);
+
+      @media #{$mq-mobile} {
+      	top: -10px;
+      	left: 9%;
+		  }
+    }
+
+    & .feature-item__title {
+      margin-bottom: 20px;
+      color: #000;
+
+      @media #{$mq-mobile} {
+      	margin-bottom: 12px;
+      	margin-left: 0;
+		  	text-align: left;
+		  }
+    }
+
+    & .feature-item__text {
+    	@media #{$mq-mobile} {
+		  	text-align: left;
+		  }
     }
   }
 }
@@ -42,12 +94,39 @@
   height: 255px;
   background: #eee;
 
+  @media #{$mq-mobile} {
+  	flex-direction: column;
+  	padding-top: 0px;
+  	height: 500px;
+  }
+
   &__feature-item {
     flex: 0 1 33.33%;
     padding: 0 5.5%;
 
+    @media #{$mq-mobile} {
+    	position: relative;
+    	padding-top: 25px;
+    	padding-bottom: 30px;
+
+    	&:not(:last-child):after {
+				position: absolute;
+				display: block;
+				content: "";
+				bottom: 0;
+				left: 6.25%;
+				right: 6.25%;
+				height: 1px;
+				background: #d6d6d6;
+    	}
+    }
+
     & .feature-item__title {
       width: 150px;
+
+      @media #{$mq-mobile} {
+    		width: 80%;
+    	}
     }
 
     & .feature-item__num {

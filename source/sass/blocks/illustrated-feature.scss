@@ -3,6 +3,15 @@
   width: 100.01%;
   height: 255px;
 
+  @media #{$mq-mobile} {
+  	flex-direction: column;
+  	height: 465px;
+
+  	& br {
+  		display: none;
+  	}
+  }
+
   &__feature-item {
     flex: 0 1 33.4%;
     padding-top: 52px;
@@ -10,6 +19,20 @@
     padding-left: 3%;
     background: $blue;
     color: white;
+
+    @media #{$mq-mobile} {
+			flex: 0 1 45%;
+			padding-top: 57px;
+			padding-right: 7%;
+    	padding-left: 7%;
+    }
+  }
+
+  .illustrated-feature--2 &__feature-item {
+  	@media #{$mq-mobile} {
+			flex: 0 1 42.5%;
+			padding-top: 40px;
+    }
   }
 
   &__image {
@@ -18,6 +41,11 @@
     background-position: right center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    @media #{$mq-mobile} {
+			flex: 0 1 55%;
+			background-position: center center;
+    }
   }
 
   .illustrated-feature--1 &__image {
@@ -36,9 +64,21 @@
     @media #{$mq-retina2x} {
       background-image: url(../img/photo-bridge@2x.jpg);
     }
+
+    @media #{$mq-mobile} {
+    	flex: 0 1 57.5%;
+    	order: 1;
+			background-position: left center;
+    }
   }
 
   &__decoration-320 {
     display: none;
+  }
+}
+
+.illustrated-feature--2 {
+	@media #{$mq-mobile} {
+  	height: 450px;
   }
 }

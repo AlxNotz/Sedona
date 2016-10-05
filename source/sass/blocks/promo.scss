@@ -9,6 +9,12 @@
     background-image: url(../img/photo-background@2x.jpg);
   }
 
+  @media #{$mq-mobile} {
+  	padding-top: 47px;
+  	height: 390px;
+  	background-size: cover;
+  }
+
   &__welcome {
     margin: 0 auto;
     margin-bottom: 12px;
@@ -16,6 +22,13 @@
     height: 45px;
     background-image: url(../img/text-welcome.svg);
     background-repeat: no-repeat;
+
+    @media #{$mq-mobile} {
+    	margin-bottom: 8px;
+			width: 143px;
+			height: 34px;
+			background-size: contain;
+    }
   }
 
   &__to-georgeous {
@@ -25,6 +38,13 @@
     height: 29px;
     background-image: url(../img/text-tothegorgeous.svg);
     background-repeat: no-repeat;
+
+    @media #{$mq-mobile} {
+    	margin-bottom: 62px;
+    	width: 204px;
+    	height: 23px;
+    	background-size: contain;
+    }
   }
 
   &__sedona {
@@ -34,6 +54,13 @@
     height: 80px;
     background-image: url(../img/text-sedona.svg);
     background-repeat: no-repeat;
+
+    @media #{$mq-mobile} {
+    	margin-bottom: 67px;
+    	width: 265px;
+    	height: 46px;
+    	background-size: contain;
+    }
   }
 
   &__because {
@@ -42,18 +69,36 @@
     height: 80px;
     background-image: url(../img/text-becausecanyon.svg);
     background-repeat: no-repeat;
+
+    @media #{$mq-mobile} {
+    	width: 205px;
+    	height: 55px;
+    	background-size: contain;
+    }
   }
 
   &__decoration {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
 
     fill: white;
+
+    @media #{$mq-mobile} {
+    	display: none;
+    }
   }
 
   &__decoration-320 {
     display: none;
+
+    @media #{$mq-mobile} {
+    	display: block;
+    	position: absolute;
+    	bottom: 0;
+    	left: 0;
+
+    	fill: white;
+    }
   }
 }

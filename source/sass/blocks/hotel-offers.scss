@@ -6,6 +6,11 @@
     height: 290px;
     background: white;
     text-align: center;
+
+    @media #{$mq-mobile} {
+    	padding-top: 4px;
+    	height: 170px;
+    }
   }
 
   &__title {
@@ -15,6 +20,11 @@
     font-size: 30px;
     font-family: $font-bold;
     line-height: 26px;
+
+    @media #{$mq-mobile} {
+    	margin-bottom: 18px;
+    	font-size: 21px;
+    }
   }
 
   &__text {
@@ -25,6 +35,10 @@
     font-size: 14px;
     font-family: $font-regular;
     line-height: 24px;
+
+    @media #{$mq-mobile} {
+    	width: 80%;
+    }
   }
 
   &__hotel-search {
@@ -33,12 +47,21 @@
     left: 50%;
     z-index: 100;
     margin-left: -285px;
+
+    @media #{$mq-mobile} {
+    	position: static;
+    	margin-left: 0;
+    }
   }
 }
 
 .hotel-search {
   width: 570px;
   font-family: $font-bold;
+
+  @media #{$mq-mobile} {
+  	width: auto;
+  }
 
   & input {
     padding-right: 36px;
@@ -98,6 +121,10 @@
     text-transform: uppercase;
     font-size: 21px;
     line-height: 26px;
+
+    @media #{$mq-mobile} {
+    	font-size: 18px;
+    }
   }
 
   &__header:active &__title {
@@ -110,9 +137,25 @@
     background: white;
     box-shadow: -5px 5px 20px rgba(0, 0, 0, .1),
     5px 5px 20px rgba(0, 0, 0, .1);
-  }
 
-  &__form {
+    @media #{$mq-mobile} {
+    	position: relative;
+    	padding: 20px 6%;
+    	height: 430px;
+
+    	&:after {
+	  		position: absolute;
+	  		display: block;
+	  		content: "";
+	  		bottom: 0;
+	  		left: 0;
+	  		right: 0;
+	  		height: 15px;
+	  		background: transparent;
+	  		box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
+	  		z-index: 100;
+	  	}
+    }
   }
 
   &__coming-date,
@@ -124,12 +167,27 @@
 
     justify-content: space-between;
 
+    @media #{$mq-mobile} {
+    	flex-direction: column;
+    	height: 62px;
+    }
+
     & p {
       flex: 0 1 24.5%;
+
+      @media #{$mq-mobile} {
+      	padding-left: 5%;
+	    	padding-bottom: 7px;
+	    }
     }
 
     & input {
       flex: 0 1 75.5%;
+
+      @media #{$mq-mobile} {
+	    	padding-top: 6px;
+	    	padding-bottom: 5px;
+	    }
     }
   }
 
@@ -138,6 +196,10 @@
     top: 7px;
     right: 9px;
     color: lighten(#000, 70%);
+
+    @media #{$mq-mobile} {
+    	top: 43px;
+    }
 
     &:before {
       content: "\e900";
@@ -159,6 +221,14 @@
     margin-bottom: 55px;
 
     justify-content: space-between;
+
+    @media #{$mq-mobile} {
+    	margin-bottom: 45px;
+    }
+
+    @media (min-width: 500px) and (max-width: 767px) {
+    	justify-content: space-around;
+    }
   }
 
   &__adult-count,
@@ -170,11 +240,25 @@
 
     & p {
       flex: 0 1 30%;
+
+      @media #{$mq-mobile} {
+	    	padding-left: 14%;
+	    	padding-bottom: 7px;
+	    }
+    }
+
+    @media #{$mq-mobile} {
+    	flex-direction: column;
+    	flex: 0 1 auto;
     }
   }
 
   &__children-count {
     flex: 0 1 39%;
+
+    @media #{$mq-mobile} {
+    	flex: 0 1 auto;
+    }
   }
 
   &__count-wrap {
@@ -256,6 +340,10 @@
   position: relative;
   height: 470px;
 
+  @media #{$mq-mobile} {
+  	height: 360px;
+  }
+
   & iframe {
     position: absolute;
     top: 0;
@@ -263,5 +351,6 @@
     z-index: 1;
     width: 100%;
     height: 100%;
+    z-index: 1;
   }
 }
