@@ -86,6 +86,20 @@ module.exports = function(grunt) {
 				files: [
 					{expand: true, src: ['build/css/style.css']}
 				]
+			},
+			index: {
+				options: {
+					patterns: [{
+						match: /\.\.\/build\/css\/style\.css/m,
+						replacement: 'css/style.min.css'
+					}, {
+						match: /<script src="http:\/\/localhost:35729\/livereload\.js"><\/script>/m,
+						replacement: ''
+					}]
+				},
+				files: [
+					{expand: true, src: ['build/index.html']}
+				]
 			}
 		},
 	});
